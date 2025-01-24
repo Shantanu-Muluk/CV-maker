@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.go-back {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80vh; 
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Adds scroll behavior if content overflows */
+}
+
+h3{
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+h1{
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+p{
+    margin-left: 100px;
+    font-size: larger;
+}
+
+#bold{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#next {
+    margin-top: 150px;
+    margin-left: auto; /* Aligns to the right inside a flex container */
+    background-color: rgb(255, 255, 5);
+    color: black;
+    font-size: larger;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px 80px; /* Adds padding for better button size */
+    cursor: pointer; /* Indicates it's clickable */
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+#next:hover {
+    background-color: rgb(255, 180, 5); /* Smooth transition to hover state */
+}
