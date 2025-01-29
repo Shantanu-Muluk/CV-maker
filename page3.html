@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
-  <link rel="stylesheet" href="page1.css">
+  <link rel="stylesheet" href="page3.css">
+  
 </head>
+
 <body>
   <div class="form-container">
-    <a href="page2.html" class="go-back">← Go Back</a>
+    <a href="page1.html" class="go-back">← Go Back</a>
     <h1>Tell us about your education</h1>
     <p>Enter your education experience so far, even if you are a current student or did not graduate.</p>
 
     <form class="contact-form">
-    
+
       <div class="form-group">
         <label for="s-name">School Name</label>
         <input type="text" id="s-name" placeholder="e.g. Delhi University" required />
@@ -36,9 +39,27 @@
 
       <div class="form-group">
         <label for="pin-code">Graduation Date (or expected Graduation Date)</label>
-        <input type="text" id="pin-code" placeholder="e.g. 110034" /><br><br>
-        <input type="tel" id="phone" placeholder="e.g. +91 22 1234 5677" />
+        <input type="date" id="pin-code" placeholder="e.g. 110034" /><br><br>
+      </div><br>
+
+      <div class="experience-text" style="display: block; margin-top: 10px; font-size: 16px; color: #000;">
+        Tell us about your Experience
       </div>
+      
+
+      <div class="form-group">
+        <label for="exp">Experience</label>
+        <input type="text" id="exp" placeholder="e.g. Work in..." />
+      </div>
+
+      <div class="form-group">
+        <label for="pin-code">Start date </label>
+        <input type="date" id="pin-code" placeholder="e.g. 110034" /><br><br>
+        <label for="pin-code">End date</label>
+        <input type="date" id="pin-code" placeholder="e.g. 110034" />
+      </div>
+
+
 
       <div class="additional-info">
         <button id="education"><a href="page4.html">Next</a></button>
@@ -46,5 +67,9 @@
 
     </form>
   </div>
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>

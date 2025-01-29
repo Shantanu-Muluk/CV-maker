@@ -1,7 +1,7 @@
 /* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background: linear-gradient(to bottom right, #f3ad45, #10b7e6);
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@ body {
     background: #fff;
     padding: 20px 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 1px 10px black;
     overflow-y: auto; /* Adds scroll behavior if content overflows */
 }
 
@@ -169,8 +169,6 @@ input[required]+span {
         color: black;
     }
 }
-
-
 
 #education:hover {
     background-color: rgb(255, 180, 5); /* Smooth transition to hover state */

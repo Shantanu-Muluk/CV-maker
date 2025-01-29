@@ -1,0 +1,110 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f3ad45, #10b7e6);
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 80%;
+  height: 80vh; /* Sets the height to 80% of the viewport height */
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 2px 1px 10px black;
+  overflow-y: auto; /* Adds scroll behavior if content overflows */
+}
+  
+  .go-back {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .go-back:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Form Styles */
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1 1 calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+  }
+  
+  .experience-text {
+    flex-basis: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Button Styles */
+  #education {
+    margin-left: auto; /* Aligns to the right inside a flex container */
+    background-color: rgb(255, 255, 5);
+    color: black;
+    font-size: larger;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px 20px; /* Adds padding for better button size */
+    cursor: pointer; /* Indicates it's clickable */
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+#education:hover {
+    background-color: rgb(255, 180, 5); /* Smooth transition to hover state */
+}
+
+  
+  .additional-info {
+    text-align: right;
+    margin-top: 20px;
+  }
+  

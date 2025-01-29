@@ -1,0 +1,98 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f3ad45, #10b7e6);
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 80%;
+  height: 80vh; /* Sets the height to 80% of the viewport height */
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 2px 1px 10px black;
+  overflow-y: auto; /* Adds scroll behavior if content overflows */
+}
+
+.go-back {
+  font-size: 14px;
+  color: #007BFF;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.go-back:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#saveAndNext {
+  margin-left: auto; /* Aligns to the right inside a flex container */
+  background-color: rgb(255, 255, 5);
+  color: black;
+  font-size: larger;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px 20px; /* Adds padding for better button size */
+  cursor: pointer; /* Indicates it's clickable */
+
+  a{
+      text-decoration: none;
+      color: black;
+  }
+}
+
+#saveAndNext:hover {
+  background-color: rgb(255, 180, 5); /* Smooth transition to hover state */
+}
+
+
+.additional-info {
+  text-align: right;
+  margin-top: 20px;
+}

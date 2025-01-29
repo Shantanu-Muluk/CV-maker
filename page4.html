@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="page2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills and Summary</title>
+  <link rel="stylesheet" href="page4.css">
 </head>
+
 <body>
     <div class="form-container">
         <a href="page3.html" class="go-back">← Go Back</a>
-        <h3>Now, let’s fill out your</h3>
-        <h1>Experience</h1>
-        <p id="bold">Here’s what you need to know:</p>
-        <p>Employers scan your resume to see if you're a match.</p>
-        <p>We'll suggest bullet points that make a great impression.</p>
-
-        <button id="next"><a href="page5.html">Next</a></button>
+        <h1>Tell us about your skills</h1>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="skill-1">Skill 1</label>
+              <input type="text" id="skill-1" placeholder="e.g. JavaScript">
+              <label for="desc-1">Description</label>
+              <input type="text" id="desc-1" placeholder="Describe your experience with this skill">
+            </div>
+            <div class="form-group">
+              <label for="skill-2">Skill 2</label>
+              <input type="text" id="skill-2" placeholder="e.g. HTML">
+              <label for="desc-2">Description</label>
+              <input type="text" id="desc-2" placeholder="Describe your experience with this skill">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="skill-3">Skill 3</label>
+              <input type="text" id="skill-3" placeholder="e.g. CSS">
+              <label for="desc-3">Description</label>
+              <input type="text" id="desc-3" placeholder="Describe your experience with this skill">
+            </div>
+            <div class="form-group">
+              <label for="skill-4">Skill 4</label>
+              <input type="text" id="skill-4" placeholder="e.g. React">
+              <label for="desc-4">Description</label>
+              <input type="text" id="desc-4" placeholder="Describe your experience with this skill">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="summary">Summary</label>
+            <textarea id="summary" rows="4" placeholder="Write a brief summary about yourself..."></textarea>
+          </div>
+          <div class="additional-info">
+            <button id="saveAndNext"><a href="resume.html">Next</a></button>
+          </div>
+        </form>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
