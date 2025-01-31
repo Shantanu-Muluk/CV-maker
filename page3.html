@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
+  <title>Education & Experience</title>
   <link rel="stylesheet" href="page3.css">
-  
 </head>
 
 <body>
@@ -15,8 +14,7 @@
     <h1>Tell us about your education</h1>
     <p>Enter your education experience so far, even if you are a current student or did not graduate.</p>
 
-    <form class="contact-form">
-
+    <form class="education-form">
       <div class="form-group">
         <label for="s-name">School Name</label>
         <input type="text" id="s-name" placeholder="e.g. Delhi University" required />
@@ -33,19 +31,18 @@
       </div>
 
       <div class="form-group">
-        <label for="study">Feild of Study</label>
-        <input type="text" id="study" placeholder="e.g. India" />
+        <label for="study">Field of Study</label>
+        <input type="text" id="study" placeholder="e.g. Computer Science" />
       </div>
 
       <div class="form-group">
-        <label for="pin-code">Graduation Date (or expected Graduation Date)</label>
-        <input type="date" id="pin-code" placeholder="e.g. 110034" /><br><br>
-      </div><br>
+        <label for="graduation-date">Graduation Date (or expected Graduation Date)</label>
+        <input type="date" id="graduation-date" />
+      </div>
 
       <div class="experience-text" style="display: block; margin-top: 10px; font-size: 16px; color: #000;">
         Tell us about your Experience
       </div>
-      
 
       <div class="form-group">
         <label for="exp">Experience</label>
@@ -53,22 +50,19 @@
       </div>
 
       <div class="form-group">
-        <label for="pin-code">Start date </label>
-        <input type="date" id="pin-code" placeholder="e.g. 110034" /><br><br>
-        <label for="pin-code">End date</label>
-        <input type="date" id="pin-code" placeholder="e.g. 110034" />
+        <label for="start-date">Start Date</label>
+        <input type="date" id="start-date" /><br><br>
+        <label for="end-date">End Date</label>
+        <input type="date" id="end-date" />
       </div>
-
-
 
       <div class="additional-info">
-        <button id="education"><a href="page4.html">Next</a></button>
+        <button type="submit" id="education">Next</button>
       </div>
-
     </form>
   </div>
 
-  <script src="script.js"></script>
+  <script src="page1.js"></script>
 
 </body>
 
