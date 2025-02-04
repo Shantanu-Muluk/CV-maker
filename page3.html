@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education & Experience</title>
-  <link rel="stylesheet" href="page3.css">
+  <link rel="stylesheet" href="/css files/page3.css">
 </head>
 
 <body>
@@ -14,30 +14,30 @@
     <h1>Tell us about your education</h1>
     <p>Enter your education experience so far, even if you are a current student or did not graduate.</p>
 
-    <form class="education-form">
+    <form class="education-form" id="form">
       <div class="form-group">
         <label for="s-name">School Name</label>
-        <input type="text" id="s-name" placeholder="e.g. Delhi University" required />
+        <input type="text" id="s-name" name="sname" placeholder="e.g. Delhi University" required />
       </div>
 
       <div class="form-group">
         <label for="s-location">School Location</label>
-        <input type="text" id="s-location" placeholder="e.g. Delhi, India" required />
+        <input type="text" id="s-location" name="slocation" placeholder="e.g. Delhi, India" required />
       </div>
 
       <div class="form-group">
         <label for="degree">Degree</label>
-        <input type="text" id="degree" placeholder="e.g. Software Engineer" />
+        <input type="text" id="degree" name="degree" placeholder="e.g. Software Engineer" />
       </div>
 
       <div class="form-group">
         <label for="study">Field of Study</label>
-        <input type="text" id="study" placeholder="e.g. Computer Science" />
+        <input type="text" id="study" name="field_of_study" placeholder="e.g. Computer Science" />
       </div>
 
       <div class="form-group">
         <label for="graduation-date">Graduation Date (or expected Graduation Date)</label>
-        <input type="date" id="graduation-date" />
+        <input type="date" id="graduation-date" name="gdate" />
       </div>
 
       <div class="experience-text" style="margin-top: 10px; font-size: 16px; color: #000;">
@@ -46,17 +46,17 @@
 
       <div class="form-group">
         <label for="exp">Experience</label>
-        <input type="text" id="exp" placeholder="e.g. Work in..." />
+        <input type="text" id="exp" name="experience" placeholder="e.g. Work in..." />
       </div>
 
       <div class="form-group">
         <label for="start-date">Start Date</label>
-        <input type="date" id="start-date" />
+        <input type="date" name="startDate" id="start-date" />
       </div>
 
       <div class="form-group">
         <label for="end-date">End Date</label>
-        <input type="date" id="end-date" />
+        <input type="date" name="endDate" id="end-date" />
       </div>
 
       <div class="additional-info">
@@ -65,8 +65,8 @@
     </form>
   </div>
 
-  <script src="page1.js"></script>
 
 </body>
+<script src="/js Files/page3.js"></script>
 
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
-  <link rel="stylesheet" href="page1.css">
+  <link rel="stylesheet" href="/css files/page1.css">
 </head>
 <body>
   <div class="form-container">
@@ -12,7 +12,7 @@
     <h1>What’s the best way for employers to contact you?</h1>
     <p>We suggest including an email and phone number.</p>
 
-    <form class="contact-form">
+    <form class="contact-form" id="form">
       <div class="upload-photo">
         <div class="photo-container">
           <img src="#" alt="Default Avatar" class="photo-preview" />
@@ -23,52 +23,52 @@
 
       <div class="form-group">
         <label for="first-name">First Name</label>
-        <input type="text" id="first-name" placeholder="e.g. Saanvi" required />
+        <input type="text" id="first-name" name="first_name" placeholder="e.g. Saanvi" required />
       </div>
 
       <div class="form-group">
         <label for="surname">Surname</label>
-        <input type="text" id="surname" placeholder="e.g. Patel" required />
+        <input type="text" id="surname" name="surname" placeholder="e.g. Patel" required />
       </div>
 
       <div class="form-group">
         <label for="profession">Profession</label>
-        <input type="text" id="profession" placeholder="e.g. Software Engineer" />
+        <input type="text" id="profession" name="profession" placeholder="e.g. Software Engineer" />
       </div>
 
       <div class="form-group">
         <label for="city">City</label>
-        <input type="text" id="city" placeholder="e.g. New Delhi" />
+        <input type="text" id="city" name="city" placeholder="e.g. New Delhi" />
       </div>
 
       <div class="form-group">
         <label for="country">Country</label>
-        <input type="text" id="country" placeholder="e.g. India" />
+        <input type="text" id="country" name="country" placeholder="e.g. India" />
       </div>
 
       <div class="form-group">
         <label for="pin-code">PIN Code</label>
-        <input type="text" id="pin-code" placeholder="e.g. 110034" />
+        <input type="text" id="pin-code" name="pin" placeholder="e.g. 110034" />
       </div>
 
       <div class="form-group">
         <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="e.g. +91 22 1234 5677" />
+        <input type="tel" id="phone" name="phone" placeholder="e.g. +91 22 1234 5677" />
       </div>
 
       <div class="form-group">
         <label for="email">Email <span>*</span></label>
-        <input type="email" id="email" placeholder="e.g. saanvipatel@sample.in" required />
+        <input type="email" id="email" name="email" placeholder="e.g. saanvipatel@sample.in" required />
       </div>
 
       <div class="additional-info">
-        <button type="submit" id="education">Next: Education</button>
+        <button type="submit" id="education">Submit</button>
       </div>
 
     </form>
   </div>
 
 </body>
-<script src="page1.js"></script>
+<script src="/js Files/page1.js"></script>
 
 </html>
