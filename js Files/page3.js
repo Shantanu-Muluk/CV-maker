@@ -2,66 +2,40 @@ document.addEventListener("DOMContentLoaded", () => {
     let form = document.getElementById("form");
 
     form.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        let school_Name = event.target.sname.value;
+        event.preventDefault()
+        let school_name = event.target.sname.value;
         let school_location = event.target.slocation.value;
         let degree = event.target.degree.value;
         let field_of_study = event.target.field_of_study.value;
-        let gdate = event.target.gdate.value;
+        let gdate = event.target.gdate.value || "NA"
         let experience = event.target.experience.value;
-        let startDate = event.target.startDate.value;
-        let endDate = event.target.endDate.value;
+        let startDate = event.target.startDate.value || "NA"
+        let endDate = event.target.endDate.value || "NA"
 
         let data = {
-            school_Name,
-            school_location,
-            degree,
-            field_of_study,
-            gdate,
-            experience,
-            startDate,
-            endDate
-        };
+            school_name, school_location, degree, field_of_study, gdate, experience, startDate, endDate
+        }
 
-        console.log(data);
-
-        localStorage.setItem("educationDetails", JSON.stringify(data));
-
-        display(); // Call display function after saving data
-    });
+        localStorage.setItem("Education_Details", JSON.stringify(data))
+        display()
+        window.location.href="resume.html"
+    })
 
     function display() {
-        let storedData = localStorage.getItem("educationDetails");
+        let education = document.getElementById("education-details");
+        let experience = document.getElementById("experience-details");
 
-        if (storedData) {
-            let details = JSON.parse(storedData);
-
-            document.getElementById("education-details").innerHTML = `
-                <strong>School Name:</strong> ${details.school_Name} <br>
-                <strong>Location:</strong> ${details.school_location} <br>
-                <strong>Degree:</strong> ${details.degree} <br>
-                <strong>Field of Study:</strong> ${details.field_of_study} <br>
-                <strong>Graduation Date:</strong> ${details.gdate}
-            `;
-
-            document.getElementById("experience-details").innerHTML = `
-                <strong>Experience:</strong> ${details.experience} <br>
-                <strong>Start Date:</strong> ${details.startDate} <br>
-                <strong>End Date:</strong> ${details.endDate}
-            `;
-
-            let skillsList = document.getElementById("exp-list");
-            skillsList.innerHTML = ""; // Clear existing list items
-
-            let skills = details.experience.split(","); // Assuming skills are comma-separated
-            skills.forEach(skill => {
-                let li = document.createElement("li");
-                li.textContent = skill.trim();
-                skillsList.appendChild(li);
-            });
+        let displayData = localStorage.getItem("Education_Details");
+        console.log(displayData)
+        if (displayData) {
+            let data = JSON.parse(displayData)
+            education.innerText = `College Name: ${data.school_name}
+        College Location: ${data.school_location}, Qualification: ${data.degree},  Field_of_Study: ${data.field_of_study}, Graduation_Date:${data.gdate}
+        `
+            experience.innerText = `Ecperience: ${data.experience}, Start Date: ${data.startDate}, End Date: ${data.endDate}`
         }
-    }
 
-    display(); // Display data on page load if available
-});
+        
+    }
+    display();
+})
