@@ -27,33 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             localStorage.setItem("skills_summary", JSON.stringify(skillsData));
 
-            console.log("Skills and summary saved:", skillsData);
-            display();
+            // console.log("Skills and summary saved:", skillsData);
+            window.location.href = ""
         });
     }
 
-    function display() {
-        let storedData = localStorage.getItem("skills_summary");
+    
 
-        if (storedData) {
-            let data = JSON.parse(storedData);
-
-            // Display Summary
-            document.getElementById("summary-text").textContent = data.summary;
-
-            // Display Skills
-            let skillsList = document.getElementById("skills-list");
-            skillsList.innerHTML = ""; // Clear existing list items
-
-            data.skills.forEach(skill => {
-                if (skill.name.trim()) { // Only add skills that are not empty
-                    let li = document.createElement("li");
-                    li.innerHTML = `<span><strong>${skill.name}</strong>: ${skill.description}</span>`;
-                    skillsList.appendChild(li);
-                }
-            });
-        }
-    }
-
-    display();
+    displaypage2();
 });
