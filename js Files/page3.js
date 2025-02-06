@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     let form = document.getElementById("form");
-
+    console.log(form)
     form.addEventListener("submit", (event) => {
         event.preventDefault()
         let school_name = event.target.sname.value;
@@ -17,14 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         localStorage.setItem("Education_Details", JSON.stringify(data))
+        window.location.href = "resume.html"
         display()
-        window.location.href="resume.html"
     })
 
     function display() {
-        let education = document.getElementById("education-details");
-        let experience = document.getElementById("experience-details");
-
+        let education = document.getElementById("education_details");
+        let experience = document.getElementById("experience_details");
+        console.log(education)
+        console.log(experience)
         let displayData = localStorage.getItem("Education_Details");
         console.log(displayData)
         if (displayData) {
@@ -33,9 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
         College Location: ${data.school_location}, Qualification: ${data.degree},  Field_of_Study: ${data.field_of_study}, Graduation_Date:${data.gdate}
         `
             experience.innerText = `Ecperience: ${data.experience}, Start Date: ${data.startDate}, End Date: ${data.endDate}`
+        } else {
+            console.log("error")
         }
 
-        
+
     }
     display();
 })
