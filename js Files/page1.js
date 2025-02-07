@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Update displayed data after saving
 
-            window.location.replace("page3.html");
+            window.location.replace("page2.html");
         });
     }
     

@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("skills_summary", JSON.stringify(skillsData));
 
             // console.log("Skills and summary saved:", skillsData);
-            window.location.href = ""
+            window.location.href = "page3.html"
         });
     }
 
